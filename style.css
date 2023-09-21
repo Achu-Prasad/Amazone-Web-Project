@@ -2,13 +2,15 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar{
+.navbar-first{
     background-color: #0F1111;
     color: white;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav-logo{
     height:50px;
@@ -122,6 +124,7 @@
 .text-main{
     font-size: 0.85rem;
     font-weight: 700;
+    color: white;
 }
 /** return order box**/
 .nav-return{
@@ -131,4 +134,56 @@
     width: 77px;
     height: 50px;
     padding-left: 10px;
+}
+/**Cart box**/
+.nav-cart{
+    width:84px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 10px;
+}
+.nav-cart i{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #febd68;
+}
+
+
+/**navigation bar second starts here**/
+.navbar-second{
+    background-color: #232f3e;
+    height: 39px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar-sec-icon{
+    display: flex;
+    padding-right: 10px;
+    height: 29px;
+    padding: 5px 10px 5px 0px ;
+    align-items: center;
+}
+.navbar-sec-icon i{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-sec-list{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 29px;
+    padding: 5px 0px 6px 0px;
+}
+.nav-sec-list-text{
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    height: 28px;
+    padding: 5px 8px;
 }
