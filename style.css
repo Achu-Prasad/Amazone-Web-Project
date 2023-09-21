@@ -8,7 +8,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-
+    justify-content: space-evenly;
 }
 .nav-logo{
     height:50px;
@@ -44,4 +44,91 @@
 .add-icon{
     display: flex;
     align-items: center;
+}
+/** Search box**/
+.nav-search-bar{
+    display: flex;
+    height: 40px;
+    width:620px;
+    background-color: lightsalmon;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+.nav-search-bar:hover{
+    border: 2px solid orange;
+    border-radius: 4px;
+}
+.search-select{
+    width: 50px;
+    background-color: #e6e6e6;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    background-color: #febd68;
+    color: #0F1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/**contry language selection box**/
+.con-lang{
+    width: 55.3px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.con-img{
+    width: 21.6px;
+    height: 16.2px;
+    margin-right: 3px;
+}
+.con-select{
+    background-color:transparent;
+    border: none;
+    color: white;
+    font-weight: 750;
+}
+.con-select option{
+    background-color:#0F1111;
+    color:white;
+    font-weight: 750;
+}
+/**Account & login box**/
+.nav-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 131.5px;
+    height: 50px;
+    padding-left: 10px;
+}
+.text-sub{
+    font-size: 0.7rem;
+}
+.text-main{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** return order box**/
+.nav-return{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 77px;
+    height: 50px;
+    padding-left: 10px;
 }
