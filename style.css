@@ -1,15 +1,20 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
     height: auto;
+    scroll-behavior: smooth;
+    height: 700vh;
 }
 .navbar-first{
     background-color: #0F1111;
     color: white;
     height: 60px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +50,8 @@ body{
     margin-left: 3px;
 }
 .nav-address{
-    height: 50px;
+    height: auto;
+    min-width: fit-content;
 }
 .add-icon{
     display: flex;
@@ -55,7 +61,7 @@ body{
 .nav-search-bar{
     display: flex;
     height: 40px;
-    width:620px;
+    width:60%;
     background-color: lightsalmon;
     border-radius: 4px;
     justify-content: space-evenly;
@@ -91,8 +97,8 @@ body{
 }
 /**contry language selection box**/
 .con-lang{
-    width: 55.3px;
-    height: 33px;
+    min-width:auto;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -160,7 +166,7 @@ body{
     background-color: #232f3e;
     height: 39px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -185,7 +191,7 @@ body{
     gap: 10px;
     height: 29px;
     width: 80%;
-    padding: 5px 0px 6px 0px;
+    
 }
 .nav-sec-list-text{
     color: white;
@@ -198,9 +204,13 @@ body{
 
 
 /**Main Section**/
+main{
+    width: auto;
+    height: auto;
+}
 .main-top{
     background-image: url("./Images/hero_image.jpg");
-    height: 350px;
+    height: 23rem;
     width: 100%;
     background-size: cover;
     display: flex;
@@ -232,12 +242,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap:25px;
-    padding-top: 25px;
+    gap:1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 .shopbox{
     width: 23%;
-    height: 380px;
+    height: 25rem;
     background-color: white;
     padding: 20px 0px;
     display: flex;
@@ -248,14 +259,15 @@ body{
     margin-right: 1rem;
 }
 .backgroundimg-box{
-    height: 300px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    height: 18.75rem;
+    margin-bottom: 1.25rem;
+    margin-top: 0.625rem;
     background-size: cover;
 }
 .shop-sec-p{
     color: #007185;
     font-size: 0.8rem;
+    font-weight: lighter;
 }
 .shop-sec h2{
     font-size: 21px;
@@ -265,4 +277,94 @@ body{
     width: 45px;
     background-color: #febd68;
     text-align: center;
+}
+/*large shop section*/
+.shopboxlarge{
+    width: 98%;
+    height: 18rem;
+    background-color: white;
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    /*border: 2px solid #007185;*/
+}
+.large_container{
+    width: auto;
+    height: 12.5rem;
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.large_container_img{
+    height: 12.25rem;
+    width: 100%;
+    margin: 0px 5px;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+/*deals under 25 $ Section*/
+.shopboxlarge_2{
+    width: 98%;
+    height: 24.5rem;
+    background-color: white;
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.inside_large{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.large_container_2{
+    width: auto;
+    height: auto;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: azure;
+}
+.button_deal{
+    height: 1.7rem;
+    width: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: small;
+    font-weight:600;
+}
+.large_container_img_2{
+    height: 12.25rem;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+p.deal{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: small;
+    color: red;
+}
+.button_block{
+    display:flex;
+    align-items: center;
+}
+.prize{
+    font-size: larger;
+}
+.prize>span{
+    font-size:12px;
+    color: grey;
+    font-weight: lighter;
+}
+.itemname{
+    font-size:14px;
 }
